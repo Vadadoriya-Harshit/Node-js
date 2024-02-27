@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="add">
+        Add
+    </button>
+    <button id="remove">
+        remove
+    </button>
+    <script>
+
+var btn1 = document.getElementById('add');
+var btn2 = document.getElementById('remove');
+
+  var cart = ["fruits","vages","milk","toys"];
+
+   var userinput = prompt("Enter value :-  ");
+
+
+   btn1.addEventListener('click',()=>{
+    cart.push(userinput);
+    console.log(cart);
+   });
+   
+   btn2.addEventListener('click',()=>{
+    var findItem = cart.filter((el,i)=>{
+        return userinput!==el;
+    });
+console.log(findItem);
+})
+
+
+    </script>
+</body>
+</html>

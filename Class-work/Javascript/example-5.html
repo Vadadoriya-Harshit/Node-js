@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="add">
+        Add
+    </button>
+    <button id="remove">
+        Delete
+    </button>
+    <div id="list">
+
+    </div>
+    <script>
+
+
+
+
+var btn1 = document.getElementById('add');
+const myarr =["a","b","c","d"];
+btn1.addEventListener('click',()=>{
+    var userinput = prompt("Enter value :-  ");
+myarr.push(userinput);
+        
+})
+
+
+
+          
+
+// btn2.addEventListener('click',()=>{
+//  var findItem = myarr.filter((el,i)=>{
+//      return userinput!==el;
+//  });
+
+        let container = document.getElementById("list");
+        let ul = document.createElement("ul");
+
+        myarr.forEach(function(item){
+            let li = document.createElement("li");
+            li.textContent=item;
+            ul.appendChild(li);
+        });
+
+        container.appendChild(ul);
+    </script>
+</body>
+</html>

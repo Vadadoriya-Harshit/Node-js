@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fname": "John",
+      "lname": "Doe",
+      "email": "john@example.com",
+      "password": "johnpassword"
+    },
+    {
+      "fname": "Harsh",
+      "lname": "Madha",
+      "email": "harsh@gmail.com",
+      "password": "Harsh@123",
+      "id": "2"
+    },
+    {
+      "fname": "Dev",
+      "lname": "Vasita",
+      "email": "dev@gmail.com",
+      "password": "Dev@1234",
+      "id": "3"
+    },
+    {
+      "fname": "Mayur",
+      "lname": "Sonagara",
+      "email": "mayursonagara@gmail.com",
+      "password": "Mayur@123",
+      "id": "4"
+    },
+    {
+      "fname": "Nirav",
+      "lname": "Patel",
+      "email": "nirav@gmail.com",
+      "password": "Nirav@123",
+      "id": "5"
+    },
+    {
+      "fname": "Bhavesh",
+      "lname": "Jalandhar",
+      "email": "bhavesh@gmail.com",
+      "password": "Bhavesh@123",
+      "id": "6"
+    },
+    {
+      "fname": "Utsav",
+      "lname": "Ram",
+      "email": "Utsav@gmail.com",
+      "password": "Utsav2003",
+      "id": "7"
+    },
+    {
+      "fname": "Chetan",
+      "lname": "Sharma",
+      "email": "chetan@gmail.com",
+      "password": "Chetan@123",
+      "id": "8"
+    },
+    {
+      "fname": "Dharmesh",
+      "lname": "Panchal",
+      "email": "panchaldharmesh@gmail.com",
+      "password": "12345678",
+      "id": "9"
+    },
+    {
+      "id": "9129",
+      "fname": "Harshit",
+      "lname": "Vadadoriya",
+      "email": "h@gmail.com",
+      "password": "Harshit@123"
+    },
+    {
+      "id": "66b1",
+      "fname": "acute",
+      "lname": "informatics",
+      "email": "acute@gmail.com",
+      "password": "Acute@123"
+    },
+    {
+      "id": "a53d",
+      "fname": "dhruv",
+      "lname": "patel",
+      "email": "dhruvpatel@gmail.com",
+      "password": "Dhruv@123"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
