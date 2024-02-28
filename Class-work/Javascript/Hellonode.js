@@ -39,6 +39,8 @@ console.log(findEl);
 
  // console.log(result);
 
+ //node js is only provide enviroment and if we need to make a  server we can use a framework named express js within node js
+
  //some
 
  const result2 = number.some(value => value > 80);
