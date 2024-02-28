@@ -2,29 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 400px;
+            margin: 123px auto;
+            font-family: sans-serif;
+            border: 1px solid black;
+            display: grid;
+            background-color: black;
+            grid-template-columns: fr;
+            grid-template-rows: 20% 80%;
+        }
+        
+        .add, .list {
+            border: 1px solid black;
+        }
+        
+        input {
+            width: 300px;
+            height: 70%;
+            font-size: 22px;
+            margin: 8px;
+            outline: none;
+            padding-left: 73px;
+        }
+        
+        button {
+            border: 1px solid gray;
+            font-size: 22px;
+            height: 70%;
+            background: rgb(240, 169, 36);
+            margin-left: 12px;
+            width: 70px;
+            cursor: pointer;
+        }
+        
+        ul li {
+            display: block;
+            height: 60px;
+            width: 380px;
+            margin: 0%;
+            padding: 0%;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        ul {
+            display: block;
+            transform: translate(-35px, -12px);
+        }
+        
+        ul li{
+            color: black;
+            font-size: 22px;
+            line-height: 53px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <H1>
-        Add Item    
-    </H1>
-    <input type="text" name="" id="inp">
-    <button class="add">
-        Add
-    </button>
-    <ul id="list">
-       
-    </ul>
-    <script>
-        var addBtn = document.getElementById('add');
-        var inp = document.getElementById('inp');
-        var list = document.getElementById('list');
-       var val = inp.value;                                                                                                                                                                                             
-       console.log(val);
-        addBtn.addEventListener('click',()=>{
+    <div class="container">
+        <div class="add">
+            <input type="text" name="" value="" id="inp" placeholder="add new">
+            <button id="addButton" onclick="add()">
+                Add
+            </button>
+        </div>
+        <div class="list">
+            <ul id="taskList">
 
+            </ul>
+        </div>
+    </div>
+    <script>
+        function add()
+        {
+            var inp = document.getElementById('inp');
+          var inpValue = inp.value;
+      if(inp.value.trim()=="")
+      {
+      
+        alert("Please add some task");
+
+      }
+      else{
+        var item = document.createElement('li');
+        var deleteBtn = document.createElement('button');
+        
+
+        deleteBtn.addEventListener('click',()=>{
+           item.remove();
         })
+
+
+
+        deleteBtn.innerHTML="Delete";
+            item.innerHTML=inpValue;
+
+        var list = document.getElementById('taskList');
+           item.appendChild(deleteBtn);
+        list.appendChild(item);
+
+        inp.value=null;
+      }
+
+
+        }
+
     </script>
 </body>
-</html>
+</html>9
