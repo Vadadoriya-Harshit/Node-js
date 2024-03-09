@@ -1,0 +1,72 @@
+Q1 : What is the difference between Java & JavaScript?
+=> Java is an object-oriented programming language primarily used for developing complex enterprise applications and  Java applications can run in any virtual machine(JVM) or browser. Where JavaScript is a scripting language used for creating interactive and dynamic web pages. JavaScript code used to run only in the browser, but now it can run on the server via Node.js Java is mainly used for backend but Javascript is used for the frontend and backend both.
+
+
+Q2. What is JavaScript?
+=> JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. It is also known as the scripting language for webpages. It is a dynamically typed language. It can be used for Client-side developments as well as Server-side developments.
+
+
+
+Q3. What are the data types supported by JavaScript?
+
+=> There are two types of data types in JavaScript
+1.Primitve Data-type : 
+String, Number, Boolean, Undefined, Null
+2. Non-primitive (reference) Data-type:
+Object, Array
+
+Q4. What are the scopes of a variable in JavaScript?
+
+=> There are four scopes of variable in JavaScript.
+1. Global Scope:
+Variables declared outside of any function or block have global scope, meaning they can be accessed from anywhere in the code.
+2. Local Scope/Function Scope:
+Variables declared inside a function have local scope, and they can only be accessed within that function.
+3. Block Scope:
+Variables declared using let and const within a block (enclosed by curly braces {}) have block scope. This means they are only accessible within that specific block, such as an if statement or a for loop.
+
+
+Q5. What is Callback?
+=> A callback is a function passed as an argument to another function .This technique allows a function to call another function. A callback function can run after another function has finished. Callbacks are used to handle the results of asynchronous operations in a non-blocking manner.
+
+
+
+Q6. What is Closure? Give an example.
+=> Closure: Inner function can access variable from the outer function’s scope even after the outer function has finished executing. 
+Example:
+function outerFunction(outerValue) {
+  return function (innerValue) {
+    console.log(outerValue + innerValue);
+  };
+}
+outerFunction(10)(5); => We will get 15.
+
+
+
+Q7. What is the difference between the operators ‘==‘ & ‘===‘?
+ => 
+“==”: it will only check equality of values
+ “===”: it will check both equality of values and data-type.
+
+Q8. What is the difference between null & undefined?	
+Undefined : A Variable has been declared but has not been assigned a value.
+Null : The null value is explicitly assigned to a variable  to represent the absence of a value.
+
+
+Q9. What would be the result of 2+5+”3″?
+=> The result of 2+5+ “3” = 73 
+2 + 5 = 7  type of value is Number
+7 + “3”	 number + string  = ‘73’ (String)
+
+
+	
+Q10. What is the difference between Call & Apply?
+=> The main basic difference between call and apply in JavaScript lies in how they handle arguments:
+call: Takes arguments individually as a comma-separated list.
+Example:
+function example(arg1, arg2) { // code here}
+example.call(null, value1, value2);
+apply: Takes arguments as an array or an array-like object.
+Example:
+function example(arg1, arg2) {  // code here}
+example.apply(null, [value1, value2]);
