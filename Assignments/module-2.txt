@@ -1,0 +1,114 @@
+Q1. What is Node.js? Where can you use it?
+=> Node.js is an open-source and cross-platform JavaScript runtime environment.
+=> Node.js  allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser.
+=> Node.js  used to write server-side applications with access to the operating system, file system, and everything else required to build fully-functional applications.
+
+
+
+Q2. Explain callback in Node.js.
+=> NodeJS callbacks are a special type of function you can use to write asynchronous code.
+=> They're called when the function that contains the callback as an argument completes its execution, and allows the code in the callback to run in the meantime.
+=> Example : 
+const fs = require('fs'); 
+const data = fs.readFile('hello.txt', 'utf-8', function(err, result){ 
+    if(err){ 
+        console.log(err) 
+    } else { 
+        console.log(result) 
+    } 
+})
+
+
+
+Q3. What are the advantages of using promises instead of callbacks?
+=> Promises provide a more readable and sequential code structure compared to nested callbacks.
+=> Because of .catch() method it is easy to do error handling.
+=> We can Promise Chaining  for more linear flow of async operation and reduce callback nesting.
+=> Due to status of promises(pending,fulfilled,rejected)  it is  easy to track of async operation status.
+
+
+
+Q4. What is NPM?
+=> npm is a package manager for Node.js projects made available for public use. Projects available on the npm registry are called “packages.”
+=> It allows us to use code written by others easily without the need to write them ourselves during development.
+
+
+Q5. What are the modules in Node.js? Explain
+=> Modules are block of code which we use it in our application on the basis of its functionality.
+=> Modules can be a single file or a collection of multiple files/folders.
+=> There are three types of module .
+1.Core Modules  : 
+Node.js comes with dozens of built-in modules. These built-in modules are sometimes referred to as core modules.
+Example :
+fs => To handle file system
+http => To make node.js act as HTTP server
+2.Local Modules : 
+Doing all code in single file is not good so we create a different script files to make organize code.That called Local module in our application. For that we have to export it and where ever we need to use we have to import it.
+Example : 
+const demo = function(){
+	console.log(“local modules”);
+}
+module.exports = demo;
+
+const main  = require(“./demo”);
+
+3. Third Party Modules : Third-party modules can be installed from the NPM (Node Package Manager) available online. For that we have to install it from npm.
+Example : 
+npm install "module_name"
+npm install express
+npm install yargs
+
+Q6. Create TODO app using FS module with yargs (command line arguments)
+
+=>
+Example:
+const fs = require("fs");
+const yargs = require("yargs");
+
+const todoFile = "todo.json";
+
+const loadTodos = () => {
+  try {
+    const data = fs.readFileSync(todoFile, "utf-8");
+    return JSON.parse(data);
+  } catch (error) {
+    return [];
+  }
+};
+
+const saveTodos = (data) => {
+  const saveData = JSON.stringify(data);
+  fs.writeFileSync(todoFile, saveData);
+};
+
+yargs.command({
+  command: "add",
+  describe: "To add new Todo",
+  builder: {
+    title: {
+      type: String,
+    },
+  },
+  handler: function (arguments) {
+    console.log(arguments);
+    console.log("=====>>>> inside the add command");
+    const todos = loadTodos();
+    todos.push({ title: arguments.title });
+    saveTodos(todos);
+    console.log("Todo added");
+  },
+});
+
+yargs.command({
+  command: "showtodo",
+  describe: "List of Todos",
+  handler: function () {
+    const todos = loadTodos();
+    console.log(todos);
+    todos.forEach((todo, index) => {
+      console.log(`${index + 1} ==> ${todo.title}`);
+    });
+  },
+});
+
+console.log(yargs.argv);
