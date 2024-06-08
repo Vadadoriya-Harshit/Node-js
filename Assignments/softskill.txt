@@ -1,0 +1,71 @@
+Module 1) Personal Information
+Briefly introduce yourself:
+My name is Harshit. I have a degree in BCA from MangalayatanUniversity]. I am currently a [student/professional].
+Mention key personality traits:
+I am known for my creativity, strong analytical skills, and a deep passion for problem-solving.
+Explain your interest in technology and why you chose this career path:
+I have always been fascinated by technology and its potential to solve real-world problems. This led me to pursue a career in technology.
+
+Module 2) Technology
+Discuss plans for upgrading your technology skills:
+I plan to upgrade my technology skills by taking advanced courses in AI and machine learning.
+Mention any relevant courses, certifications, or resources you are pursuing:
+I am currently enrolled in a certification program for Data Science and also exploring online resources on Coursera and Udemy.
+Share your approach to continuous learning and professional development:
+My approach involves setting clear learning goals, staying updated with industry trends, and engaging in hands-on projects.
+
+Module 3) Projects
+Describe a key project you have worked on or are currently working on:
+I worked on a project to develop a web application for online education.
+Explain the technologies used, the scope of the project, and its objectives:
+The project used technologies like React, Node.js, and MongoDB. The objective was to create a user-friendly platform for online learning.
+Highlight the challenges faced and how you addressed them, showcasing your problem-solving skills:
+One of the challenges was ensuring data security. I addressed this by implementing robust encryption and authentication mechanisms.
+
+Module 4) HR Questions
+Outline your career goals and where you see yourself in the next few years:
+I aim to become a lead software developer and contribute to innovative projects.
+Detail the roles and industries you are interested in:
+I am interested in roles such as software developer and data scientist in the tech industry.
+Highlight specific goals or milestones you aim to achieve:
+Specific goals include obtaining relevant certifications and leading a project team.
+
+Module 5) Mock Interview, & Assessment
+Facilitate mock interview sessions where students can simulate real interview scenarios:
+Organize sessions to simulate real interview scenarios.
+Invite guest speakers or experts to provide insights into interview best practices and industry trends:
+Invite industry experts to share their insights.
+Conduct a Q&A session where students can seek clarification on interview-related topics and receive personalized advice:
+Hold Q&A sessions for personalized advice.
+
+Module 6) Self Evaluation, LinkedIn Profile and Resume Builder
+Update your resume to reflect your latest experiences and skills. Ensure it's professionally formatted.
+Convert your resume to PDF and upload it to your repository by clicking ‘Add file’ > ‘Upload files’, then commit with a message like "Add updated resume".
+Obtain the shareable URL of your resume by selecting the uploaded file and clicking 'Download'.
+Add a brief reflection on this process to the README file in your repository, including the URL to your resume.
+
+Module 7) Confidence Building (Activity Session) - Language Barrier, Impromptu Speech - IT Policies Briefing
+Create a PowerPoint Presentation: Include sections on the basics of personal information technology projects, methods for building confidence, techniques for successful impromptu speeches, and a briefing on relevant IT policies.
+Convert to PDF: Once your PowerPoint is complete, save it as a PDF to preserve the layout and formatting.
+Upload to GitHub:
+Recording, Uploading, and Privately Sharing Your Video: (with GitHub Integration)
+Record Your Video:
+Use a camera or a screen recorder to make your video.
+Make sure you have good lighting and clear sound.
+Talk about your topic confidently and clearly.
+Upload to YouTube:
+Log in to your YouTube account.
+Click on the 'Create' button and choose 'Upload Video.'
+Pick your video file from your computer and wait for it to upload.
+Keep Your Video Private:
+Before you publish, look for the 'Privacy' setting.
+Choose 'Unlisted’ to make sure only people with the link can watch it.
+Copy the Video Link:
+After your video is uploaded, YouTube will give you a link.
+Copy this link so you can share it later.
+Add the Link to GitHub:
+Go to your GitHub repository.
+Create or edit a file where you want to add the link.
+Paste the YouTube link into the file and save it.
+Now your video link is on GitHub for others to see!
+``` &#8203;:citation[oaicite:0]{index=0}&#8203;
